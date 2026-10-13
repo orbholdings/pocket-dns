@@ -1,0 +1,17 @@
+.pio/
+.cache/
+release/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+tests/engine_host
+tests/*_test
+tests/*.png
+.env
+.env.*
+*Signing_Key*
+*PRIVATE_Signing_Kit*
+*private*.pem
+*private*.key
+keys/

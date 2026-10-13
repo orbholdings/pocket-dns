@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "esptool-js": "^0.7.0",
+    "linkedom": "^0.18.12",
+    "qrcode-generator": "^1.4.4"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}

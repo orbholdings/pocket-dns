@@ -1,0 +1,8 @@
+{
+  "source": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini-onlydomains.txt",
+  "snapshot_date": "2026-10-12",
+  "source_sha256": "9e7e8687b23d2cff1baafe1822c40d36935b74d6124f04416718120fb1f2e4f4",
+  "source_domains": 67731,
+  "strict_additional_hashes": 17454,
+  "bytes": 87270
+}

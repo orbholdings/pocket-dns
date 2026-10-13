@@ -1,0 +1,58 @@
+name: Publish verified downloads
+
+on:
+  push:
+    branches: [main]
+    paths: ["prebuilt/**", ".github/workflows/publish.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify and assemble the signed release
+        run: |
+          python -m pip install -r requirements-build.txt
+          python tools/restore_release.py
+          python - <<'PY'
+          import json, re, shutil
+          from pathlib import Path
+          release = Path('release')
+          manifest = json.loads((release / 'manifest.json').read_text())
+          assert re.fullmatch(r'\d+\.\d+\.\d+', manifest['version'])
+          assets = Path('.cache/public-assets')
+          assets.mkdir(parents=True, exist_ok=True)
+          for name in ['Pocket_DNS_V2_Complete_Pack.zip', 'Pocket_DNS_USB_Installer.html', 'SHA256SUMS.txt']:
+              shutil.copy2(release / name, assets / name)
+          for layout, board in manifest['boards'].items():
+              shutil.copy2(release / board['signed_update'], assets / f"Pocket_DNS_{manifest['version']}_{layout}.pdu")
+          Path('.cache/release-notes.md').write_text('Pocket DNS ' + manifest['version'] + '\n\nOptional Buy me a coffee link added to the dashboard and offline USB installer. Includes classic ESP32 4 MB and ESP32-S3 4/8/16 MB factory images, signed updates, full source and licences.\n\nSoftware tests and builds passed. This is a hardware test release: real USB, Wi-Fi, DNS load and power-cycle/OTA rollback checks are still required. A USB factory install clears settings; a matching signed .pdu dashboard update keeps them.\n\nSupport: https://square.link/u/kAddgU4q\n')
+          Path('.cache/release-tag.txt').write_text('v' + manifest['version'])
+          PY
+      - name: Publish the hardware test release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PDNS_TAG=$(cat .cache/release-tag.txt)
+          if gh release view "$PDNS_TAG" >/dev/null 2>&1; then
+            if [ "$(gh release view "$PDNS_TAG" --json isDraft --jq .isDraft)" != "true" ]; then
+              echo "The published release already exists; keeping it unchanged."
+              exit 0
+            fi
+          else
+            gh release create "$PDNS_TAG" --draft --target "$GITHUB_SHA" --title "Pocket DNS $PDNS_TAG — hardware test release" --notes-file .cache/release-notes.md
+          fi
+          gh release upload "$PDNS_TAG" .cache/public-assets/* --clobber
+          gh release edit "$PDNS_TAG" --draft=false --prerelease --latest=false

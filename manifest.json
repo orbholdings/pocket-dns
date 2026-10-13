@@ -1,0 +1,207 @@
+{
+  "factory_address": "0x0",
+  "boards": {
+    "esp32-4mb": {
+      "chip": "esp32",
+      "flash_size": "4MB",
+      "flash_frequency": "40m",
+      "factory": "firmware/esp32-4mb/factory.bin",
+      "signed_update": "firmware/esp32-4mb/Pocket_DNS_2.0.1.pdu",
+      "sha256": "4d4d8d2aaee08efc8fd54d3e3f957ee95908338c4563fd4256598314eccb8883",
+      "bytes": 4194304,
+      "application_bytes": 971264,
+      "partition_sha256": "a48bded318ece2727fc0dfccb4bba766cffbe9c940b13cbc3fa237135afea224",
+      "partitions": [
+        {
+          "name": "nvs",
+          "type": 1,
+          "subtype": 2,
+          "offset": 36864,
+          "size": 20480
+        },
+        {
+          "name": "otadata",
+          "type": 1,
+          "subtype": 0,
+          "offset": 57344,
+          "size": 8192
+        },
+        {
+          "name": "app0",
+          "type": 0,
+          "subtype": 16,
+          "offset": 65536,
+          "size": 1376256
+        },
+        {
+          "name": "app1",
+          "type": 0,
+          "subtype": 17,
+          "offset": 1441792,
+          "size": 1376256
+        },
+        {
+          "name": "spiffs",
+          "type": 1,
+          "subtype": 130,
+          "offset": 2818048,
+          "size": 1376256
+        }
+      ],
+      "ram_static_bytes": 110360,
+      "program_bytes": 964693
+    },
+    "esp32s3-4mb": {
+      "chip": "esp32s3",
+      "flash_size": "4MB",
+      "flash_frequency": "80m",
+      "factory": "firmware/esp32s3-4mb/factory.bin",
+      "signed_update": "firmware/esp32s3-4mb/Pocket_DNS_2.0.1.pdu",
+      "sha256": "d40f729ed6d94e9fa4d02a81b0b4f3ec90118beba7c031be03d902f25fe0c994",
+      "bytes": 4194304,
+      "application_bytes": 927360,
+      "partition_sha256": "a48bded318ece2727fc0dfccb4bba766cffbe9c940b13cbc3fa237135afea224",
+      "partitions": [
+        {
+          "name": "nvs",
+          "type": 1,
+          "subtype": 2,
+          "offset": 36864,
+          "size": 20480
+        },
+        {
+          "name": "otadata",
+          "type": 1,
+          "subtype": 0,
+          "offset": 57344,
+          "size": 8192
+        },
+        {
+          "name": "app0",
+          "type": 0,
+          "subtype": 16,
+          "offset": 65536,
+          "size": 1376256
+        },
+        {
+          "name": "app1",
+          "type": 0,
+          "subtype": 17,
+          "offset": 1441792,
+          "size": 1376256
+        },
+        {
+          "name": "spiffs",
+          "type": 1,
+          "subtype": 130,
+          "offset": 2818048,
+          "size": 1376256
+        }
+      ],
+      "ram_static_bytes": 110472,
+      "program_bytes": 926993
+    },
+    "esp32s3-8mb": {
+      "chip": "esp32s3",
+      "flash_size": "8MB",
+      "flash_frequency": "80m",
+      "factory": "firmware/esp32s3-8mb/factory.bin",
+      "signed_update": "firmware/esp32s3-8mb/Pocket_DNS_2.0.1.pdu",
+      "sha256": "e81dabb7e25af01224b2a7231b3cb7a672ba1386885f051bd1421c959b194539",
+      "bytes": 8388608,
+      "application_bytes": 927360,
+      "partition_sha256": "94a7a01110714a3cb7a57507ccfef3c8ddb0a5183f6fa5141e18140bb7b86abf",
+      "partitions": [
+        {
+          "name": "nvs",
+          "type": 1,
+          "subtype": 2,
+          "offset": 36864,
+          "size": 20480
+        },
+        {
+          "name": "otadata",
+          "type": 1,
+          "subtype": 0,
+          "offset": 57344,
+          "size": 8192
+        },
+        {
+          "name": "app0",
+          "type": 0,
+          "subtype": 16,
+          "offset": 65536,
+          "size": 1572864
+        },
+        {
+          "name": "app1",
+          "type": 0,
+          "subtype": 17,
+          "offset": 1638400,
+          "size": 1572864
+        },
+        {
+          "name": "spiffs",
+          "type": 1,
+          "subtype": 130,
+          "offset": 3211264,
+          "size": 5177344
+        }
+      ],
+      "ram_static_bytes": 110472,
+      "program_bytes": 926993
+    },
+    "esp32s3-16mb": {
+      "chip": "esp32s3",
+      "flash_size": "16MB",
+      "flash_frequency": "80m",
+      "factory": "firmware/esp32s3-16mb/factory.bin",
+      "signed_update": "firmware/esp32s3-16mb/Pocket_DNS_2.0.1.pdu",
+      "sha256": "09068b3a513cb215b6fcb2de25785bd5ad8c0dcf4fbeeeff45b95e18a2084c5c",
+      "bytes": 16777216,
+      "application_bytes": 927360,
+      "partition_sha256": "0a757818e47674ffa91a36469073f2ffaec8893fba84da07d74ce6d0bc76d6ca",
+      "partitions": [
+        {
+          "name": "nvs",
+          "type": 1,
+          "subtype": 2,
+          "offset": 36864,
+          "size": 20480
+        },
+        {
+          "name": "otadata",
+          "type": 1,
+          "subtype": 0,
+          "offset": 57344,
+          "size": 8192
+        },
+        {
+          "name": "app0",
+          "type": 0,
+          "subtype": 16,
+          "offset": 65536,
+          "size": 1572864
+        },
+        {
+          "name": "app1",
+          "type": 0,
+          "subtype": 17,
+          "offset": 1638400,
+          "size": 1572864
+        },
+        {
+          "name": "spiffs",
+          "type": 1,
+          "subtype": 130,
+          "offset": 3211264,
+          "size": 13565952
+        }
+      ],
+      "ram_static_bytes": 110472,
+      "program_bytes": 926993
+    }
+  },
+  "version": "2.0.1",
+  "version_code": 20001
+}

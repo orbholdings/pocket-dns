@@ -1,0 +1,191 @@
+{
+  "version": "2.0.1",
+  "files": [
+    {
+      "file": "manifest.json.gz",
+      "path": "manifest.json",
+      "bytes": 5278,
+      "sha256": "8e9f573a4ade7e570484a464cbf9c8a9e2ce89b32e65932bcbdbd0451b3192a2"
+    },
+    {
+      "file": "update_public_key.pem.gz",
+      "path": "update_public_key.pem",
+      "bytes": 178,
+      "sha256": "2a6e110c1532d51712573b7910629c5779572b5dd40395a00be6648dcf18c419"
+    },
+    {
+      "file": "Pocket_DNS_USB_Installer.html.gz",
+      "path": "Pocket_DNS_USB_Installer.html",
+      "bytes": 10779053,
+      "sha256": "88adf49783478895c815e81b2b46ee6ad82c330f72fed0a939ab8c28a8942eaa"
+    },
+    {
+      "file": "firmware/esp32-4mb/Pocket_DNS_2.0.1.pdu.gz",
+      "path": "firmware/esp32-4mb/Pocket_DNS_2.0.1.pdu",
+      "bytes": 971684,
+      "sha256": "96d9c6df7c0a9c65351e222b4947668c1f3e9a1a094f85482d1903792a6e7574"
+    },
+    {
+      "file": "firmware/esp32-4mb/application.bin.gz",
+      "path": "firmware/esp32-4mb/application.bin",
+      "bytes": 971264,
+      "sha256": "e4a0985d997f1ad29f3b5f38948e23e0e070b72283eb963048e50e1fb2370ea2"
+    },
+    {
+      "file": "firmware/esp32-4mb/bootloader.bin.gz",
+      "path": "firmware/esp32-4mb/bootloader.bin",
+      "bytes": 17536,
+      "sha256": "3d234a7471f67b013686dabd4dee7c1fa915c9928463616a94bc9297acf1abf8"
+    },
+    {
+      "file": "firmware/esp32-4mb/factory.bin.gz",
+      "path": "firmware/esp32-4mb/factory.bin",
+      "bytes": 4194304,
+      "sha256": "4d4d8d2aaee08efc8fd54d3e3f957ee95908338c4563fd4256598314eccb8883"
+    },
+    {
+      "file": "firmware/esp32-4mb/littlefs.bin.gz",
+      "path": "firmware/esp32-4mb/littlefs.bin",
+      "bytes": 1376256,
+      "sha256": "f235ed717564c39f9e2a68054ca588c379b861416cdef06d2f1ff9ed8fab4e0e"
+    },
+    {
+      "file": "firmware/esp32-4mb/otadata.bin.gz",
+      "path": "firmware/esp32-4mb/otadata.bin",
+      "bytes": 8192,
+      "sha256": "3a3dd76b7b4854a8c933ae683d67bdfb1f8c223a23f1419269803db6246716bc"
+    },
+    {
+      "file": "firmware/esp32-4mb/partitions.bin.gz",
+      "path": "firmware/esp32-4mb/partitions.bin",
+      "bytes": 3072,
+      "sha256": "d847f381bacdd34ee76954807dda999f1e92d83df521f8afc9561e445562b17e"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/Pocket_DNS_2.0.1.pdu.gz",
+      "path": "firmware/esp32s3-16mb/Pocket_DNS_2.0.1.pdu",
+      "bytes": 927785,
+      "sha256": "60c7584dc524c0d2488fc4dc1ee2fbf1864f748766bb48e4c8b2ac250870010a"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/application.bin.gz",
+      "path": "firmware/esp32s3-16mb/application.bin",
+      "bytes": 927360,
+      "sha256": "ed0611239b78bcee37e64be6c16b1abc455ac76ac4c2eb6313a352e02cff0da1"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/bootloader.bin.gz",
+      "path": "firmware/esp32s3-16mb/bootloader.bin",
+      "bytes": 14032,
+      "sha256": "1033730a6df733f53a7a347353c1c5450547f76e98e0746da633079310a563b9"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/factory.bin.gz",
+      "path": "firmware/esp32s3-16mb/factory.bin",
+      "bytes": 16777216,
+      "sha256": "09068b3a513cb215b6fcb2de25785bd5ad8c0dcf4fbeeeff45b95e18a2084c5c"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/littlefs.bin.gz",
+      "path": "firmware/esp32s3-16mb/littlefs.bin",
+      "bytes": 13565952,
+      "sha256": "ad8df221c778660bea62971b52faa01a754608032235cd59e19619f258d39932"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/otadata.bin.gz",
+      "path": "firmware/esp32s3-16mb/otadata.bin",
+      "bytes": 8192,
+      "sha256": "3a3dd76b7b4854a8c933ae683d67bdfb1f8c223a23f1419269803db6246716bc"
+    },
+    {
+      "file": "firmware/esp32s3-16mb/partitions.bin.gz",
+      "path": "firmware/esp32s3-16mb/partitions.bin",
+      "bytes": 3072,
+      "sha256": "12d4ebbaafaa4cfd1e526cce54a79e3c01581eb6d274431c59ebe5b70a07ac6f"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/Pocket_DNS_2.0.1.pdu.gz",
+      "path": "firmware/esp32s3-4mb/Pocket_DNS_2.0.1.pdu",
+      "bytes": 927788,
+      "sha256": "5117d38035aad5da89e6494e9aeef16d0eda27f14f6c82a952d1acb3495aa7aa"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/application.bin.gz",
+      "path": "firmware/esp32s3-4mb/application.bin",
+      "bytes": 927360,
+      "sha256": "b85cccfaa1ed7292a8f0edfac19585a3fb1b9e86c08cb684701a24c362bba465"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/bootloader.bin.gz",
+      "path": "firmware/esp32s3-4mb/bootloader.bin",
+      "bytes": 14032,
+      "sha256": "9bf9aab34441621d794360ca427cbddc3d62f38a7950f8790696bb3d7986769f"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/factory.bin.gz",
+      "path": "firmware/esp32s3-4mb/factory.bin",
+      "bytes": 4194304,
+      "sha256": "d40f729ed6d94e9fa4d02a81b0b4f3ec90118beba7c031be03d902f25fe0c994"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/littlefs.bin.gz",
+      "path": "firmware/esp32s3-4mb/littlefs.bin",
+      "bytes": 1376256,
+      "sha256": "f235ed717564c39f9e2a68054ca588c379b861416cdef06d2f1ff9ed8fab4e0e"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/otadata.bin.gz",
+      "path": "firmware/esp32s3-4mb/otadata.bin",
+      "bytes": 8192,
+      "sha256": "3a3dd76b7b4854a8c933ae683d67bdfb1f8c223a23f1419269803db6246716bc"
+    },
+    {
+      "file": "firmware/esp32s3-4mb/partitions.bin.gz",
+      "path": "firmware/esp32s3-4mb/partitions.bin",
+      "bytes": 3072,
+      "sha256": "d847f381bacdd34ee76954807dda999f1e92d83df521f8afc9561e445562b17e"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/Pocket_DNS_2.0.1.pdu.gz",
+      "path": "firmware/esp32s3-8mb/Pocket_DNS_2.0.1.pdu",
+      "bytes": 927786,
+      "sha256": "701bedd7a4dcb5746b4f7c1f35583c54a110a4bb544bdb5d41f78f8915e0e7e6"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/application.bin.gz",
+      "path": "firmware/esp32s3-8mb/application.bin",
+      "bytes": 927360,
+      "sha256": "074b242b1377b634a2c92c3b0b49fe289770fb322875e42b0dbfef83783cd42a"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/bootloader.bin.gz",
+      "path": "firmware/esp32s3-8mb/bootloader.bin",
+      "bytes": 14032,
+      "sha256": "876f58f4c5e2b2a3eae9e025b29096f034af99f6617edae3676817306d306dcf"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/factory.bin.gz",
+      "path": "firmware/esp32s3-8mb/factory.bin",
+      "bytes": 8388608,
+      "sha256": "e81dabb7e25af01224b2a7231b3cb7a672ba1386885f051bd1421c959b194539"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/littlefs.bin.gz",
+      "path": "firmware/esp32s3-8mb/littlefs.bin",
+      "bytes": 5177344,
+      "sha256": "63c0f6e19df572fe3ee866f1cf8b49e89c44fabd7d34468122b9476dff6e16bd"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/otadata.bin.gz",
+      "path": "firmware/esp32s3-8mb/otadata.bin",
+      "bytes": 8192,
+      "sha256": "3a3dd76b7b4854a8c933ae683d67bdfb1f8c223a23f1419269803db6246716bc"
+    },
+    {
+      "file": "firmware/esp32s3-8mb/partitions.bin.gz",
+      "path": "firmware/esp32s3-8mb/partitions.bin",
+      "bytes": 3072,
+      "sha256": "fe045328238f0b845d95d77f635045716379af913e2b759ad02c07f64b12adaf"
+    }
+  ]
+}

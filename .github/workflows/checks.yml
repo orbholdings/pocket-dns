@@ -1,0 +1,67 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  PLATFORMIO_SETTING_ENABLE_TELEMETRY: "false"
+
+jobs:
+  host-and-browser:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: python -m pip install -r requirements-build.txt -r requirements-flash.txt
+      - run: npm ci --prefix tools/vendor
+      - name: Install pinned test dependencies
+        run: |
+          mkdir -p .cache/test-deps
+          pio pkg install --global --storage-dir .cache/test-deps --library bblanchon/ArduinoJson@6.21.5
+          tools/vendor/node_modules/.bin/playwright install --with-deps chromium --only-shell
+      - run: python tools/run_tests.py
+      - run: python tools/restore_release.py
+      - run: node tests/test_ui.cjs
+      - name: Check generated dashboard matches its source
+        run: |
+          python tools/embed_web.py
+          git diff --exit-code -- src/page.h
+
+  firmware:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        board: [esp32-4mb, esp32s3-4mb, esp32s3-8mb, esp32s3-16mb]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements-build.txt
+      - run: python tools/embed_web.py
+      - run: pio run -e ${{ matrix.board }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: developer-build-components-${{ matrix.board }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            .pio/build/${{ matrix.board }}/firmware.bin
+            .pio/build/${{ matrix.board }}/bootloader.bin
+            .pio/build/${{ matrix.board }}/partitions.bin

@@ -1,0 +1,47 @@
+{
+  "downloaded_utc": "2026-10-11T07:04:26.619647+00:00",
+  "files": [
+    {
+      "file": "blocklist-sources/stevenblack-hosts.txt",
+      "source": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+      "sha256": "b83fc7acc934248ea4995dac213aa0ebb92d6824fd8469c1c20327b445db9051",
+      "bytes": 2229037
+    },
+    {
+      "file": "blocklist-sources/hagezi-light.txt",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light-onlydomains.txt",
+      "sha256": "2a5662d1715dd343457fe6d7677d31eb9316112a333071a240a0c6b78303505b",
+      "bytes": 1151295
+    },
+    {
+      "file": "blocklist-sources/hagezi-ultimate.txt",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate-onlydomains.txt",
+      "sha256": "87cb2929d28eb4d21c5866749d058cd711d6dded56beba7958459d2b74c1553c",
+      "bytes": 4430296
+    },
+    {
+      "file": "third-party/StevenBlack-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/StevenBlack/hosts/master/license.txt",
+      "sha256": "8e52717212b5051232dd31fb2247310bd91d5295eaab380dbea6454d0268443b",
+      "bytes": 1086
+    },
+    {
+      "file": "third-party/HaGeZi-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "file": "third-party/HaGeZi-sources.md",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/sources.md",
+      "sha256": "21c73e67f8f85f2ff7efd13eb1ded50c79bead41223c518daa1ddeebebb188fe",
+      "bytes": 23022
+    },
+    {
+      "file": "third-party/StevenBlack-readme.md",
+      "source": "https://raw.githubusercontent.com/StevenBlack/hosts/master/readme.md",
+      "sha256": "c0e27c8d174656fa0a894dee34f3f79db722107e7d3145c30db111950ae28493",
+      "bytes": 44488
+    }
+  ]
+}

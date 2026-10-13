@@ -1,0 +1,19 @@
+POCKET DNS V2 — START HERE
+
+Extract the ZIP fully, then open Pocket_DNS_USB_Installer.html in desktop Chrome or Edge.
+Connect your WROOM-32 with a USB data cable, detect the board, and install the complete image.
+The installer selects the correct firmware and flashing address automatically.
+A factory install replaces earlier firmware, Wi-Fi credentials and settings.
+
+Read the setup credentials in the installer (press RESET and click Read setup credentials if needed).
+Join the PocketDNS-xxxxxx Wi-Fi with the shown per-device password.
+Open http://192.168.4.1, enter your 2.4 GHz Wi-Fi and choose an admin password.
+Reconnect to your normal Wi-Fi and open the IP shown by the wizard / your router's device list.
+Reserve that IP and set it as your router's LAN/DHCP DNS.
+
+First test on your WROOM-32. The code has been compiled and software-tested,
+but real USB / Wi-Fi / DNS / power-cycle testing still needs your board.
+
+Future updates: use the dashboard's Firmware page with a matching signed .pdu package.
+Do not manually flash an application-only .bin file at address 0x0.
+README.md has recovery, Python fallback, limits, build and licensing details.
